@@ -1,0 +1,42 @@
+/* Base Typography*/
+h1{
+    font-family: $solway;
+    font-weight: $bold;
+    font-size: $xx-large;
+}
+h2{
+    font-family: $solway;
+    font-weight: $bold;
+    font-size: $xx-large;
+}
+h3{
+    font-family: $encode;
+    font-weight: $regular;
+    font-size: $small;
+    padding:0;
+    margin: 10px;
+}
+h4{
+    font-family: $encode;
+    font-weight: $bold;
+    font-size: $medium;
+}
+h5{
+    font-family: $solway;
+    font-weight: $regular;
+    font-size: $x-large;
+    padding:0;
+    margin: 10px;
+}
+h6{
+    font-family: $solway;
+    font-weight: $regular;
+    font-size: $small;
+    padding:0;
+    margin: 0;
+}
+p{
+    font-family: $encode;
+    font-weight: 400;
+    font-size: 0.8rem;
+}

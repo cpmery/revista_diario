@@ -1,0 +1,19 @@
+.footer__container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.footer__div{
+    width: 75vw;
+    text-align: center;
+    background-color: $smoky_black;
+    color:white;
+    padding: 20px 0px;
+}
+//TAMAÑO PEQUEÑO
+@media only screen and (max-width:700px){
+    .footer__div{
+        width: 100vw;
+        padding: 5px 0px;
+    }
+}

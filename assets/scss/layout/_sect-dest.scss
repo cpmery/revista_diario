@@ -1,0 +1,81 @@
+//SLIDER
+.sect-dest__container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px;
+    font-family: $encode;
+}
+ul.sect-dest__slider{
+    width: 75vw;
+    height: 40vh;
+    position: relative;
+}
+.sect-dest__slider li{
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    list-style: none;
+
+}
+//TEXTO
+.sect-dest__slider li h2{
+    color: white;
+    position: absolute;
+    bottom:70px;
+    left:20px;
+}
+.sect-dest__slider li h4{
+    color: white;
+    position: absolute;
+    bottom:40px;
+    left:20px;
+}
+//IMAGENES
+.sect-dest__slider li img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+//FUNCIONALIDAD
+.sect-dest__slider li:first-child{
+    opacity:1;
+}
+.sect-dest__slider li:target{
+    opacity:1;
+}
+//BOTONES
+.sect-dest_menu{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    position: relative;
+    top:-40px;
+    z-index: 1;
+}
+.sect-dest_menu li{
+    list-style: none;
+}
+.sect-dest_menu li a{
+    box-sizing: border-box;
+    padding:2px 8px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: $smoky_black;
+    color: white;
+    border-radius: 50%;  
+    font-size: $small;
+    font-weight: $medium;
+}
+
+@media only screen and (max-width:700px){
+    ul.sect-dest__slider{
+        width: 100vw;
+    }
+    .sect-dest__slider li{
+        width: 100vw;
+    }
+}

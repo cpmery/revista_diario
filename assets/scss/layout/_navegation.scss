@@ -1,0 +1,68 @@
+.nav__div{
+    padding:0;
+    margin:0;
+    display: block;
+    border-bottom: 1px solid $light_gray;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    
+}
+.nav__logo{
+    display:inline-block;
+    padding-left: 50px;
+}
+.nav__input{
+    float:right;
+    line-height: 20px;
+    margin:13px 50px;
+    position: relative;
+}
+.nav__menu{    
+    display: inline-block;
+    margin:0;
+    position: absolute;
+    right: 250px;
+}
+.nav__menu a{
+    color: $smoky_black;
+    text-decoration: none;
+    line-height: 20px;
+    display: inline-block;
+
+}
+label, #nav__toggle{
+    display:none;
+}
+
+
+@media only screen and (max-width:700px){
+    label{
+        display: inline-block;
+        size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 250px; 
+    }
+    .nav__menu{
+        width: 100%;
+        display: none;
+        background-color: white;
+    }
+    .nav__menu a{
+        width: 100vw;
+        display: block;
+        text-align: end;
+        border-bottom: 1px solid $light_gray;
+        background-color: white;
+        z-index: 1;
+        padding:10px 0px 0px 0px;
+    }
+    #nav__toggle:checked + .nav__menu{
+        display: block;
+        z-index: 1;
+    }
+}

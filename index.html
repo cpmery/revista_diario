@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista</title>
+<!--ESTILO-->
+    <link href="assets/scss/main.css" rel="stylesheet">
+<!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@200;500;700&family=Solway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--NAVEGATION-->
+<div class="nav__div row">
+    <div class="nav__logo col-xs-2"><h1>DIARIO</h1></div>
+    <label for="nav__toggle">&#9776;</label>
+    <input type="checkbox" id="nav__toggle">    
+    <div class="nav__menu">
+        <a href="#not"><h3>Noticias</h3></a>
+        <a href="#sus"><h3>Suscríbete</h3></a>
+        <a href="#sus"><h3>Nosotros</h3></a>
+    </div>
+    <input class="nav__input col-xs-3" placeholder="Buscar">
+</div>
+<!--SECCIÓN DESTACADO-->
+<div class="sect-dest__container">
+    <!--imagenes carousel-->
+    <ul class="sect-dest__slider">
+        <li id="slide1">
+            <h2>Destacados</h2>
+            <h4>Noticia 1. Política y Economía</h4>
+            <img src="https://picsum.photos/200/200?random=7">
+        </li>
+        <li id="slide2">
+            <h2>Destacados </h2>
+            <h4>Noticia 2. Tecnología y Ciencia</h4>
+            <img src="https://picsum.photos/200/200?random=8">
+        </li>
+        <li id="slide3">
+            <h2>Destacados </h2>
+            <h4>Noticia 3. Arte y Entretenimiento</h4>
+            <img src="https://picsum.photos/200/200?random=9">
+        </li>
+    </ul> 
+    <!--menu carousel-->
+    <ul class="sect-dest_menu">
+        <li><a href=#slide1>1</a></li>
+        <li><a href=#slide2>2</a></li>
+        <li><a href=#slide3>3</a></li>   
+    </ul>
+</div>
+<!--SECCIÓN TAGS--> 
+<div class="sect-tags__container">
+<div class="sect-tags__div">
+    <h5>tags</h5>
+    <ul>
+        <li><h6>#viajes</h6></li>
+        <li><h6>#noticias</h6></li>
+        <li><h6>#comida</h6></li>
+    </ul>
+</div>
+</div>
+<!--SECCIÓN NOTICIAS-->
+<div id="not" class="sect-noti__container">
+    <div class="sect-noti__div">
+        <!--noticia 1-->
+        <div class="noticia">
+            <div class="cabecera"><h4>Las claves del éxito</h4></div>
+            <div class="cuerpo">
+                <img src="https://picsum.photos/200/300?random=1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <!--noticia 2-->
+        <div class="noticia">
+            <div class="cabecera"><h4>La verdad del bicho asiático</h4></div>
+            <div class="cuerpo">
+                <img src="https://picsum.photos/200/300?random=2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <!--noticia 3-->
+        <div class="noticia">
+            <div class="cabecera"><h4>La manipulación económica mundial</h4></div>
+            <div class="cuerpo">
+                <img src="https://picsum.photos/200/300?random=3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <!--noticia 4-->
+        <div class="noticia">
+            <div class="cabecera"><h4>Manual para hacer cambiar de opinión a cualquier persona</h4></div>
+            <div class="cuerpo">
+                <img src="https://picsum.photos/200/300?random=4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <!--noticia 5-->
+        <div class="noticia">
+            <div class="cabecera"><h4>Libertad en tiempos de toque de queda</h4></div>
+            <div class="cuerpo">
+                <img src="https://picsum.photos/200/300?random=5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <!--noticia 6-->
+        <div class="noticia">
+            <div class="cabecera"><h4>Entrevista al lider del partido satánico</h4></div>
+            <div class="cuerpo">
+                <img src="https://picsum.photos/200/300?random=6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--SECCIÓN SUSCRIPCIÓN-->
+<div id="sus" class="sect-susc__container">
+    <div class="sect-susc__div row">
+        <div class="sect-susc__div2 col-xs-12 col-sm-7">
+            <h5>Suscríbete en nuesta página</h5>
+            <p>Te enviaremos noticias segun tus preferencias</p>
+            <div class="sect-susc__divinput">
+                <input class="sect-susc__input" placeholder="correo electrónico">
+                <button class="sect-susc__button">Suscríbete</button>
+            </div>
+        </div>
+        <div class="sect-susc__div3  col-xs-12 col-sm-5">
+            <h5>Nosotros</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut dignissimos officia consectetur, facilis laboriosam quia placeat quas incidunt. Saepe iste soluta beatae vitae provident accusamus quo temporibus deleniti odit qui.</p>
+        </div>
+    </div>
+</div>
+<!--FOOTER--> 
+<footer class="footer__container">
+    <div class="footer__div">
+        <p>Todos los derechos reservados</p>
+    </div>
+</footer> 
+</body>
+</html>
